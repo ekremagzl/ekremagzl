@@ -65,7 +65,7 @@ Bitirme projemin ikinci iş paketindeyim: tree-sitter ile kodu anlamlı parçala
 ### İLETİŞİM
 
 <a href="https://github.com/ekremagzl"><img src="https://img.shields.io/badge/GitHub-1f2328?style=flat-square&logo=github&logoColor=2dd4bf" alt="GitHub"></a>
-<!-- LinkedIn ve e-posta: aşağıdaki satırları kendi bilgilerinle doldurup yorumdan çıkar.
-<a href="https://www.linkedin.com/in/KULLANICI-ADIN/"><img src="https://img.shields.io/badge/LinkedIn-1f2328?style=flat-square&logo=linkedin&logoColor=2dd4bf" alt="LinkedIn"></a>
+<a href="https://www.linkedin.com/in/ekremagziguzel/"><img src="https://img.shields.io/badge/LinkedIn-1f2328?style=flat-square&logo=linkedin&logoColor=2dd4bf" alt="LinkedIn"></a>
+<!-- E-posta: adresini yazıp yorumdan çıkar.
 <a href="mailto:ADRESIN@ornek.com"><img src="https://img.shields.io/badge/E--posta-1f2328?style=flat-square&logo=gmail&logoColor=2dd4bf" alt="E-posta"></a>
 -->
