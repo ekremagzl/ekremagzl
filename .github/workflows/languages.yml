@@ -23,7 +23,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
-        run: python3 scripts/build_languages.py
+        run: |
+          # Token yoksa yalnızca açık repolar sayılırdı; gizli repoları da içeren mevcut kartı ezmemek için atla.
+          if [ -z "$GH_TOKEN" ]; then echo "METRICS_TOKEN yok, mevcut kart korunuyor"; exit 0; fi
+          python3 scripts/build_languages.py
 
       - name: Commit & Push
         run: |
