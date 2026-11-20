@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200" role="img" aria-label="CANLI DÖVİZ">
+<style>
+  :root { --t: #1f2328; --m: #656d76; --a: #0f766e; --r: #d0d7de; --ink: #ffffff; --bg: #ffffff; --s: #f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --t: #e6edf3; --m: #7d8590; --a: #2dd4bf; --r: #30363d; --ink: #0d1117; --bg: #0d1117; --s: #161b22; } }
+  text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  .draw { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1.2s .3s cubic-bezier(.6,0,.2,1) forwards; }
+  .pop { opacity: 0; animation: fade .4s 1.2s forwards; }
+  .flow { stroke-dasharray: 4 6; animation: dash 1.2s linear infinite; }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .grow { transform-box: fill-box; transform-origin: bottom; animation: grow 1s .4s cubic-bezier(.2,.8,.2,1) both; }
+  .growx { transform-box: fill-box; transform-origin: left; animation: growx .9s .4s cubic-bezier(.2,.8,.2,1) both; }
+  .scan { animation: scan 2.6s ease-in-out infinite alternate; }
+  .b1, .b2, .b3, .b4, .b5 { opacity: .2; animation: blink 2.4s infinite; }
+  .b2 { animation-delay: .3s; } .b3 { animation-delay: .6s; } .b4 { animation-delay: .9s; } .b5 { animation-delay: 1.2s; }
+  .d1 { animation-delay: .5s; } .d2 { animation-delay: .65s; } .d3 { animation-delay: .8s; } .d4 { animation-delay: .95s; } .d5 { animation-delay: 1.1s; } .d6 { animation-delay: 1.25s; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes dash { to { stroke-dashoffset: -20; } }
+  @keyframes pulse { 50% { opacity: .3; } }
+  @keyframes grow { from { transform: scaleY(0); } }
+  @keyframes growx { from { transform: scaleX(0); } }
+  @keyframes scan { to { transform: translateY(var(--scan, 90px)); } }
+  @keyframes blink { 0%, 60%, 100% { opacity: .2; } 30% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .draw { animation: none; stroke-dashoffset: 0; }
+    .pop { animation: none; opacity: 1; }
+    .flow, .pulse, .grow, .growx, .scan, .b1, .b2, .b3, .b4, .b5 { animation: none; opacity: 1; }
+  }
+</style>
+<rect x=".5" y=".5" width="439" height="199" style="fill:var(--bg);stroke:var(--r)"/><path d="M0 12 V0 H12 M428 0 H440 V12 M440 188 V200 H428 M12 200 H0 V188" fill="none" stroke-width="2" style="stroke:var(--a)"/>
+<text x="20" y="34" font-size="12" font-weight="700" style="fill:var(--a)">06</text>
+<text x="44" y="34" font-size="15" font-weight="700" style="fill:var(--t)">CANLI DÖVİZ</text>
+<text x="420" y="34" font-size="10" text-anchor="end" style="fill:var(--m)">masaüstü</text>
+<line x1="20" y1="46" x2="420" y2="46" style="stroke:var(--r)"/>
+<text x="20" y="72" font-size="12" style="fill:var(--t)">Kurları API'den canlı çekip 7 para</text><text x="20" y="90" font-size="12" style="fill:var(--t)">birimi arasında anında çeviren, 30</text><text x="20" y="108" font-size="12" style="fill:var(--t)">saniyede bir yenilenen Tkinter</text><text x="20" y="126" font-size="12" style="fill:var(--t)">uygulaması.</text>
+
+<g font-size="11">
+  <text x="296" y="74" style="fill:var(--m)">USD</text><text x="420" y="74" text-anchor="end" style="fill:var(--a)" class="b1">▲</text>
+  <text x="296" y="94" style="fill:var(--m)">EUR</text><text x="420" y="94" text-anchor="end" style="fill:var(--a)" class="b3">▲</text>
+  <text x="296" y="114" style="fill:var(--m)">GBP</text><text x="420" y="114" text-anchor="end" style="fill:var(--m)" class="b5">▼</text>
+</g>
+<polyline points="328,70 342,66 356,72 370,62 384,64 398,58" fill="none" stroke-width="1.4" style="stroke:var(--a)" class="draw"/>
+<polyline points="328,90 342,92 356,84 370,88 384,80 398,82" fill="none" stroke-width="1.4" style="stroke:var(--a)" class="draw"/>
+<polyline points="328,104 342,108 356,106 370,112 384,110 398,116" fill="none" stroke-width="1.4" style="stroke:var(--m)" class="draw"/>
+<rect x="296" y="128" width="124" height="22" fill="none" style="stroke:var(--r)"/>
+<text x="304" y="143" font-size="11" style="fill:var(--t)">1 USD →</text><text x="414" y="143" font-size="11" text-anchor="end" style="fill:var(--a)" class="pulse">TRY ···</text>
+
+
+<line x1="20" y1="172" x2="420" y2="172" style="stroke:var(--r)"/>
+<text x="20" y="190" font-size="10" style="fill:var(--m)">python · tkinter · rest api</text>
+<text x="420" y="190" font-size="10" text-anchor="end" style="fill:var(--a)">repo →</text>
+</svg>

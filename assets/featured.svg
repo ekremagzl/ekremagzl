@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="PR Review Assistant: RAG tabanlı yapay zekâ kod inceleme asistanı">
+<style>
+  :root { --t: #1f2328; --m: #656d76; --a: #0f766e; --r: #d0d7de; --ink: #ffffff; --bg: #ffffff; --s: #f6f8fa; }
+  @media (prefers-color-scheme: dark) { :root { --t: #e6edf3; --m: #7d8590; --a: #2dd4bf; --r: #30363d; --ink: #0d1117; --bg: #0d1117; --s: #161b22; } }
+  text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  .draw { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1.2s .3s cubic-bezier(.6,0,.2,1) forwards; }
+  .pop { opacity: 0; animation: fade .4s 1.2s forwards; }
+  .flow { stroke-dasharray: 4 6; animation: dash 1.2s linear infinite; }
+  .pulse { animation: pulse 2.4s ease-in-out infinite; }
+  .grow { transform-box: fill-box; transform-origin: bottom; animation: grow 1s .4s cubic-bezier(.2,.8,.2,1) both; }
+  .growx { transform-box: fill-box; transform-origin: left; animation: growx .9s .4s cubic-bezier(.2,.8,.2,1) both; }
+  .scan { animation: scan 2.6s ease-in-out infinite alternate; }
+  .b1, .b2, .b3, .b4, .b5 { opacity: .2; animation: blink 2.4s infinite; }
+  .b2 { animation-delay: .3s; } .b3 { animation-delay: .6s; } .b4 { animation-delay: .9s; } .b5 { animation-delay: 1.2s; }
+  .d1 { animation-delay: .5s; } .d2 { animation-delay: .65s; } .d3 { animation-delay: .8s; } .d4 { animation-delay: .95s; } .d5 { animation-delay: 1.1s; } .d6 { animation-delay: 1.25s; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes dash { to { stroke-dashoffset: -20; } }
+  @keyframes pulse { 50% { opacity: .3; } }
+  @keyframes grow { from { transform: scaleY(0); } }
+  @keyframes growx { from { transform: scaleX(0); } }
+  @keyframes scan { to { transform: translateY(var(--scan, 90px)); } }
+  @keyframes blink { 0%, 60%, 100% { opacity: .2; } 30% { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    .draw { animation: none; stroke-dashoffset: 0; }
+    .pop { animation: none; opacity: 1; }
+    .flow, .pulse, .grow, .growx, .scan, .b1, .b2, .b3, .b4, .b5 { animation: none; opacity: 1; }
+  }
+</style>
+<rect x=".5" y=".5" width="879" height="239" style="fill:var(--bg);stroke:var(--r)"/><path d="M0 14 V0 H14 M866 0 H880 V14 M880 226 V240 H866 M14 240 H0 V226" fill="none" stroke-width="2" style="stroke:var(--a)"/>
+<text x="40" y="38" font-size="12" font-weight="700" style="fill:var(--a)">★</text>
+<text x="62" y="38" font-size="17" font-weight="700" style="fill:var(--t)">PR REVIEW ASSISTANT</text>
+<text x="840" y="38" font-size="11" text-anchor="end" style="fill:var(--m)">bitirme projesi · github app</text>
+<line x1="40" y1="52" x2="840" y2="52" style="stroke:var(--r)"/>
+<text x="40" y="76" font-size="12" style="fill:var(--m)">pull request açılır → asistan diff'i okur, bulguları satırına yorum olarak yazar</text>
+<g class="pop" style="animation-delay:0.30s"><rect x="40" y="92" width="128" height="52" style="fill:var(--s);stroke:var(--r)"/><text x="52" y="114" font-size="13" font-weight="700" style="fill:var(--t)">webhook</text><text x="52" y="132" font-size="10" style="fill:var(--m)">imza ✓</text></g><line x1="172" y1="118" x2="194" y2="118" stroke-width="1.6" style="stroke:var(--a)" class="flow"/><path d="M190 114 l5 4 l-5 4" fill="none" stroke-width="1.6" style="stroke:var(--a)"/><g class="pop" style="animation-delay:0.55s"><rect x="200" y="92" width="128" height="52" style="fill:var(--s);stroke:var(--r)"/><text x="212" y="114" font-size="13" font-weight="700" style="fill:var(--t)">diff</text><text x="212" y="132" font-size="10" style="fill:var(--m)">satır no.</text></g><line x1="332" y1="118" x2="354" y2="118" stroke-width="1.6" style="stroke:var(--a)" class="flow"/><path d="M350 114 l5 4 l-5 4" fill="none" stroke-width="1.6" style="stroke:var(--a)"/><g class="pop" style="animation-delay:0.80s"><rect x="360" y="92" width="128" height="52" style="fill:var(--s);stroke:var(--a)"/><text x="372" y="114" font-size="13" font-weight="700" style="fill:var(--t)">llm</text><text x="372" y="132" font-size="10" style="fill:var(--m)">gemini</text></g><line x1="492" y1="118" x2="514" y2="118" stroke-width="1.6" style="stroke:var(--a)" class="flow"/><path d="M510 114 l5 4 l-5 4" fill="none" stroke-width="1.6" style="stroke:var(--a)"/><g class="pop" style="animation-delay:1.05s"><rect x="520" y="92" width="128" height="52" stroke-dasharray="4 4" style="fill:var(--s);stroke:var(--r)"/><text x="532" y="114" font-size="13" font-weight="700" style="fill:var(--t)">rag</text><text x="532" y="132" font-size="10" style="fill:var(--m)">pgvector</text></g><line x1="652" y1="118" x2="674" y2="118" stroke-width="1.6" style="stroke:var(--a)" class="flow"/><path d="M670 114 l5 4 l-5 4" fill="none" stroke-width="1.6" style="stroke:var(--a)"/><g class="pop" style="animation-delay:1.30s"><rect x="680" y="92" width="128" height="52" style="fill:var(--s);stroke:var(--a)"/><text x="692" y="114" font-size="13" font-weight="700" style="fill:var(--t)">pr yorumu</text><text x="692" y="132" font-size="10" style="fill:var(--m)">önem sırası</text></g>
+<g class="b1"><rect x="40" y="166" width="90" height="20" fill="none" style="stroke:var(--a)"/><text x="50" y="180" font-size="11" style="fill:var(--a)">hata riski</text></g><g class="b2"><rect x="140" y="166" width="76" height="20" fill="none" style="stroke:var(--a)"/><text x="150" y="180" font-size="11" style="fill:var(--a)">güvenlik</text></g><g class="b3"><rect x="226" y="166" width="90" height="20" fill="none" style="stroke:var(--a)"/><text x="236" y="180" font-size="11" style="fill:var(--a)">performans</text></g><g class="b4"><rect x="326" y="166" width="111" height="20" fill="none" style="stroke:var(--a)"/><text x="336" y="180" font-size="11" style="fill:var(--a)">okunabilirlik</text></g>
+<text x="840" y="180" font-size="11" text-anchor="end" style="fill:var(--m)">- - - planlanan (İP2)</text>
+<line x1="40" y1="210" x2="840" y2="210" style="stroke:var(--r)"/>
+<text x="40" y="228" font-size="10" style="fill:var(--m)">python · fastapi · github apps · gemini · pgvector · tree-sitter · pytest</text>
+<text x="840" y="228" font-size="10" text-anchor="end" style="fill:var(--m)">KTO Karatay Üniversitesi</text>
+</svg>

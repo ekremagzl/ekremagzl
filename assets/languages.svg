@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" role="img" aria-label="En çok kullandığım diller">
+<style>
+  :root { --t: #1f2328; --m: #656d76; --r: #d0d7de; --bg: #ffffff; --c0: #0f766e; --c1: #14b8a6; --c2: #115e59; --c3: #5eead4; --c4: #134e4a; --c5: #8c959f; }
+  @media (prefers-color-scheme: dark) { :root { --t: #e6edf3; --m: #7d8590; --r: #30363d; --bg: #0d1117; --c0: #2dd4bf; --c1: #14937f; --c2: #99f6e4; --c3: #0f766e; --c4: #5eead4; --c5: #6e7681; } }
+  text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  .arc { opacity: 0; animation: fade .6s .1s forwards; }
+  .row { opacity: 0; animation: fade .4s forwards; }
+  .bar { transform-box: fill-box; transform-origin: left; animation: grow .9s .4s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes grow { from { transform: scaleX(0); } }
+  @media (prefers-reduced-motion: reduce) { .arc, .row { animation: none; opacity: 1; } .bar { animation: none; } }
+</style>
+<rect x=".5" y=".5" width="879" height="229" style="fill:var(--bg);stroke:var(--r)"/>
+<text x="40" y="28" font-size="11" style="fill:var(--m)">diller · kendi repolarımdaki koda göre</text>
+<circle cx="130" cy="118" r="70" fill="none" style="stroke:var(--c0)" stroke-width="22" stroke-dasharray="262.09 439.82" stroke-dashoffset="-0.00" transform="rotate(-90 130 118)" class="arc" /><circle cx="130" cy="118" r="70" fill="none" style="stroke:var(--c1)" stroke-width="22" stroke-dasharray="138.54 439.82" stroke-dashoffset="-264.09" transform="rotate(-90 130 118)" class="arc" /><circle cx="130" cy="118" r="70" fill="none" style="stroke:var(--c2)" stroke-width="22" stroke-dasharray="22.26 439.82" stroke-dashoffset="-404.64" transform="rotate(-90 130 118)" class="arc" /><circle cx="130" cy="118" r="70" fill="none" style="stroke:var(--c3)" stroke-width="22" stroke-dasharray="8.92 439.82" stroke-dashoffset="-428.90" transform="rotate(-90 130 118)" class="arc" />
+<text x="130" y="116" font-size="12" text-anchor="middle" style="fill:var(--m)">kod</text>
+<text x="130" y="134" font-size="14" font-weight="700" text-anchor="middle" style="fill:var(--t)">4 dil</text>
+<g class="row" style="animation-delay:0.3s"><rect x="270" y="49" width="10" height="10" style="fill:var(--c0)"/><text x="290" y="58" font-size="13" style="fill:var(--t)">TypeScript</text><rect x="420" y="51" width="300" height="6" style="fill:var(--r)"/><rect x="420" y="51" width="180.1" height="6" style="fill:var(--c0)" class="bar"/><text x="840" y="58" font-size="12" text-anchor="end" style="fill:var(--m)">60.0%</text></g><g class="row" style="animation-delay:0.4s"><rect x="270" y="77" width="10" height="10" style="fill:var(--c1)"/><text x="290" y="86" font-size="13" style="fill:var(--t)">Python</text><rect x="420" y="79" width="300" height="6" style="fill:var(--r)"/><rect x="420" y="79" width="95.9" height="6" style="fill:var(--c1)" class="bar"/><text x="840" y="86" font-size="12" text-anchor="end" style="fill:var(--m)">32.0%</text></g><g class="row" style="animation-delay:0.5s"><rect x="270" y="105" width="10" height="10" style="fill:var(--c2)"/><text x="290" y="114" font-size="13" style="fill:var(--t)">SQL</text><rect x="420" y="107" width="300" height="6" style="fill:var(--r)"/><rect x="420" y="107" width="16.6" height="6" style="fill:var(--c2)" class="bar"/><text x="840" y="114" font-size="12" text-anchor="end" style="fill:var(--m)">5.5%</text></g><g class="row" style="animation-delay:0.6s"><rect x="270" y="133" width="10" height="10" style="fill:var(--c3)"/><text x="290" y="142" font-size="13" style="fill:var(--t)">JavaScript</text><rect x="420" y="135" width="300" height="6" style="fill:var(--r)"/><rect x="420" y="135" width="7.5" height="6" style="fill:var(--c3)" class="bar"/><text x="840" y="142" font-size="12" text-anchor="end" style="fill:var(--m)">2.5%</text></g>
+</svg>

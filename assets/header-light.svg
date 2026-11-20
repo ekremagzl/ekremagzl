@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="270" viewBox="0 0 860 270" role="img" aria-label="Ekrem Ağzıgüzel: full-stack ve yapay zekâ geliştirici">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .t { fill: #1f2328; }
+    .m { fill: #656d76; }
+    .a { fill: #0f766e; }
+    .ink { fill: #ffffff; }
+    .rule { stroke: #d0d7de; stroke-width: 1; }
+    .panel { fill: #f6f8fa; stroke: #d0d7de; }
+    .box { fill: none; stroke: #0f766e; stroke-width: 2; stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 1.1s .2s cubic-bezier(.6,0,.2,1) forwards; }
+    .tag { opacity: 0; animation: fade .3s 1.2s forwards; }
+    .row { opacity: 0; animation: fade .4s forwards; }
+    .r1 { animation-delay: 1.4s; } .r2 { animation-delay: 1.55s; } .r3 { animation-delay: 1.7s; }
+    .dl { opacity: 0; animation: fade .3s forwards; }
+    .d1 { animation-delay: 1.5s; } .d2 { animation-delay: 1.65s; } .d3 { animation-delay: 1.8s; } .d4 { animation-delay: 1.95s; } .d5 { animation-delay: 2.1s; } .d6 { animation-delay: 2.25s; }
+    .scan { opacity: 0; animation: fade .2s 2.4s forwards, scan 1.4s 2.4s ease-in-out forwards; }
+    .ok { opacity: 0; animation: fade .3s 3.9s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes scan { from { transform: translateY(0); } to { transform: translateY(100px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .box { animation: none; stroke-dashoffset: 0; }
+      .tag, .row, .dl, .ok { animation: none; opacity: 1; }
+      .scan { display: none; }
+    }
+  </style>
+
+  <!-- üst bilgi satırı -->
+  <text x="40" y="26" font-size="12" class="m">ekremagzl / profile.diff</text>
+  <text x="820" y="26" font-size="12" class="m" text-anchor="end">rev. 2026.11</text>
+  <line x1="40" y1="38" x2="820" y2="38" class="rule"/>
+
+  <!-- isim: incelenmiş bir değişiklik gibi -->
+  <g class="tag">
+    <rect x="40" y="58" width="146" height="20" class="a"/>
+    <text x="48" y="72" font-size="12" font-weight="700" class="ink" textLength="130" lengthAdjust="spacingAndGlyphs">+ full-stack · ai</text>
+  </g>
+  <rect x="40" y="78" width="416" height="58" class="box"/>
+  <text x="56" y="120" font-size="38" font-weight="700" class="t" textLength="384" lengthAdjust="spacingAndGlyphs">EKREM AĞZIGÜZEL</text>
+
+  <!-- spesifikasyon satırları -->
+  <g font-size="14">
+    <g class="row r1"><text x="40" y="180" class="a">›</text><text x="58" y="180" class="m">rol</text><text x="150" y="180" class="t">Full-Stack &amp; AI Developer · LLM · RAG · SaaS</text></g>
+    <g class="row r2"><text x="40" y="208" class="a">›</text><text x="58" y="208" class="m">durum</text><text x="150" y="208" class="t">Bilgisayar Mühendisliği · KTO Karatay Üniversitesi</text></g>
+    <g class="row r3"><text x="40" y="236" class="a">›</text><text x="58" y="236" class="m">stack</text><text x="150" y="236" class="t">Python · TypeScript · FastAPI · Next.js · PostgreSQL</text></g>
+  </g>
+
+  <!-- sağda mini PR incelemesi -->
+  <rect x="592" y="70" width="228" height="166" class="panel"/>
+  <text x="604" y="90" font-size="11" class="m">pr #42 · review</text>
+  <circle cx="808" cy="86" r="3" class="a"/>
+  <line x1="592" y1="98" x2="820" y2="98" class="rule"/>
+  <g>
+    <g class="dl d1"><text x="604" y="115" font-size="11" class="m">-</text><rect x="620" y="108" width="70" height="8" rx="1" class="m" opacity=".55"/></g>
+    <g class="dl d2"><text x="604" y="132" font-size="11" class="m">-</text><rect x="620" y="125" width="110" height="8" rx="1" class="m" opacity=".55"/></g>
+    <g class="dl d3"><text x="604" y="149" font-size="11" class="a">+</text><rect x="620" y="142" width="96" height="8" rx="1" class="a" opacity="1"/></g>
+    <g class="dl d4"><text x="604" y="166" font-size="11" class="a">+</text><rect x="620" y="159" width="132" height="8" rx="1" class="a" opacity="1"/></g>
+    <g class="dl d5"><text x="604" y="183" font-size="11" class="m">·</text><rect x="620" y="176" width="84" height="8" rx="1" class="m" opacity=".55"/></g>
+    <g class="dl d6"><text x="604" y="200" font-size="11" class="a">+</text><rect x="620" y="193" width="118" height="8" rx="1" class="a" opacity="1"/></g>
+  </g>
+  <rect x="593" y="104" width="226" height="2" class="a scan" opacity=".7"/>
+  <g class="ok">
+    <line x1="592" y1="214" x2="820" y2="214" class="rule"/>
+    <text x="604" y="229" font-size="11" class="a">✓ approved</text>
+    <text x="812" y="229" font-size="11" class="m" text-anchor="end">0 kritik</text>
+  </g>
+</svg>

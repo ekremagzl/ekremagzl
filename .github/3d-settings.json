@@ -1,0 +1,24 @@
+[
+  {
+    "type": "normal",
+    "fileName": "ekremagzl-dark.svg",
+    "backgroundColor": "#0d1117",
+    "foregroundColor": "#e6edf3",
+    "strongColor": "#2dd4bf",
+    "weakColor": "#7d8590",
+    "radarColor": "#2dd4bf",
+    "growingAnimation": true,
+    "contribColors": ["#161b22", "#0b3b36", "#115e56", "#14937f", "#2dd4bf"]
+  },
+  {
+    "type": "normal",
+    "fileName": "ekremagzl-light.svg",
+    "backgroundColor": "#ffffff",
+    "foregroundColor": "#1f2328",
+    "strongColor": "#0f766e",
+    "weakColor": "#656d76",
+    "radarColor": "#0f766e",
+    "growingAnimation": true,
+    "contribColors": ["#ebedf0", "#ccfbf1", "#5eead4", "#14b8a6", "#0f766e"]
+  }
+]
